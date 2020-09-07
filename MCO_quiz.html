@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wall of fame</title>
+
+	<!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<!-- font awesome CDN -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- google font cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+    <!--Countdown timer CSS code -->
+    <link rel="stylesheet" type="text/css" href="countdown.css">
+
+    <!-- Full page CSS code -->
+    <link rel="stylesheet" type="text/css" href="FAQ.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- countdown js code -->
+    <script type="text/javascript" src="countdown.js"></script>
+
+    <!-- spinwheel cdn's -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <link rel="stylesheet" href="main.css"> 
+    <link rel="stylesheet" href="quiz.css">
+ 
+	<!-- CSS only -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
+	<!-- JS, Popper.js, and jQuery -->
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="extensions/filter-control/bootstrap-table-filter-control.css"> -->
+
+	<script src="extensions/filter-control/bootstrap-table-filter-control.js"></script>
+
+
+
+	<style type="text/css">
+
+		#walloffame1{
+
+			margin-right: 5%;
+			margin-left: 5%;
+			margin-top: 5%;
+			
+		}
+
+			.multi-column{
+				width: 500px;
+			}
+
+			.dropdown-menu.multi-column [class^="col-"] {
+			  padding: 10;
+			}
+
+			.inline #nav_headings {
+			    display: inline;
+			    padding-left: 15px;
+			}
+
+	</style>
+
+</head>
+
+	<body style=" background-color: #F2F9FC;">
+
+		  <header style="background-color: #383C45;">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light" >
+          <a class="" href="Landing-Page.html"><img src="EmPower.png" width="150" height="40" class="d-inline-block align-top " alt="" loading="lazy"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0 nav justify-content-end" >
+              &nbsp;            
+              <li class="nav-item">
+                <a class="nav-link scroll" style="font-family: “Arial Rounded MT Bold”, “Helvetica Rounded”, Arial, sans-serif;" href="Landing-Page.html" data-toggle="tooltip" title="Home" data-placement="bottom"><img id="homeli" src="9.png" onmouseover="hover(this);" onmouseout="unhover(this); "> <!-- Home --> <span class="sr-only">(current)</span></a>
+              </li>&nbsp;
+
+              <li class="nav-item">
+                <a class="nav-link scroll" style="font-family: “Arial Rounded MT Bold”, “Helvetica Rounded”, Arial, sans-serif;" href="#spinwheel" data-toggle="tooltip" title="Agya Chakra" data-placement="bottom"><img id="homeli" src="1.png" onmouseover="hover1(this);" onmouseout="unhover1(this);"> <!-- Agya Chakra --></a>
+              </li>&nbsp;
+
+              
+              <li class="nav-item">
+                <a class="nav-link scroll" style="font-family: “Arial Rounded MT Bold”, “Helvetica Rounded”, Arial, sans-serif;" href="#introductionvideo" data-toggle="tooltip" title="OnBoarding Video" data-placement="bottom"><img id="homeli" src="4.png" onmouseover="hover2(this);" onmouseout="unhover2(this);"> <!-- Onboarding Video --></a>
+              </li>&nbsp;
+
+              <li class="nav-item">
+                <a class="nav-link scroll" style="font-family: “Arial Rounded MT Bold”, “Helvetica Rounded”, Arial, sans-serif;" href="#testimonial1" data-toggle="tooltip" title="Testimonial" data-placement="bottom"><img id="homeli" src="11.png" onmouseover="hover6(this);" onmouseout="unhover6(this);"> <!-- Testimonial Section --></a>
+              </li>&nbsp;
+
+               <li class="nav-item">
+                <a class="nav-link scroll" style="font-family: “Arial Rounded MT Bold”, “Helvetica Rounded”, Arial, sans-serif;" href="#headerimg" data-toggle="tooltip" title="FAQ" data-placement="bottom"><img id="homeli" src="8.png" onmouseover="hover3(this);" onmouseout="unhover3(this);"> <!-- FAQ Section --></a>
+              </li>&nbsp;
+
+              <li class="nav-item">
+                <a class="nav-link" style="font-family: “Arial Rounded MT Bold”, “Helvetica Rounded”, Arial, sans-serif;" href="ALL_Badges.html" data-toggle="tooltip" title="Wall of Fame" data-placement="bottom"><img id="homeli" src="6.png" onmouseover="hover4(this);" onmouseout="unhover4(this);"> <!-- Wall of fame --></a>
+              </li>&nbsp;         
+          </ul> 
+      </div>
+    </nav>
+  </header>
+		
+	<div class="header">
+	    <div class="inner-header flex">
+	    	<h1 >Wall of Fame</h1>
+	        <p >Top 10</p>
+	    </div>
+
+	    <!--Waves Container-->
+	    <div>
+	        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+	            <defs>
+	                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+	            </defs>
+	            <g class="parallax">
+	                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+	                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+	                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+	                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+	            </g>
+	        </svg>
+	    </div>
+	    <!--Waves end-->
+
+	</div>
+
+	<br><br>
+
+	<div class="container-fluid">
+	<div class="row justify-content-between align-items-center bg-light" style="margin-left: 2%; margin-right: 2%;">
+		<div class="col-3">
+		<div class="row">
+			<div class="col-sm text-center"><a class="navbar-brand" href="ALL_Badges.html">All</a></div>
+			<div class="col-sm">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Department
+					</button>
+					<div class="dropdown-menu multi-column inline" aria-labelledby="dropdownMenuButton">
+					  <a id="nav_headings" class="dropdown-item" href="MCO_quiz.html">MCO</a>
+					  <a id="nav_headings" class="dropdown-item" href="ALC_Quiz.html">ALC</a>
+					  <a id="nav_headings" class="dropdown-item" href="PGP_Quiz.html">PGP</a>
+					</div>
+				  </div>
+			</div>
+			<div class="col-sm">
+				<div class="dropdown">
+					<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Department
+					</button>
+					<div class="dropdown-menu multi-column inline" aria-labelledby="dropdownMenuButton1">
+					  <a id="nav_headings" class="dropdown-item" href="IDO1_Quiz.html">IDO1</a>
+					  <a id="nav_headings" class="dropdown-item" href="IDO2_Quiz.html">IDO2</a>
+					  <a id="nav_headings" class="dropdown-item" href="IDO3_Quiz.html">IDO3</a>
+					  <a id="nav_headings" class="dropdown-item" href="IDO4_Quiz.html">IDO4</a>
+					  <a id="nav_headings" class="dropdown-item" href="IDO5_Quiz.html">IDO5</a>
+					  <a id="nav_headings" class="dropdown-item" href="IDO6_Quiz.html">IDO6</a>
+					</div>
+				  </div>
+			</div>
+			
+			</div>
+		</div>
+		<div class="col-3 ">
+			<select class="custom-select">
+				<option value="MCO_Score.html">Score</option>
+				<option value="MCO_badges.html" selected >Badges</option>
+				<option value="MCO_quiz.html">Quiz</option>
+			  </select>
+		</div>
+	</div>
+	</div>	    
+
+
+
+		<div id="walloffame1">
+
+			<table class="table table-striped order-table" data-toggle="table"
+			 data-search="true" data-filter-control="true" data-click-to-select="true" data-toolbar="#toolbar" id="table">
+			
+			<thead class="text-center">
+
+				<tr>
+				      <th scope="col">Rank</th>
+				      <th scope="col">Employee</th>
+				      <th scope="col">Quiz Score</th>
+				      <th scope="col" class="text-center">Team</th>
+				      <th scope="col">Department</th>
+				      <th scope="col">Location</th>
+				    </tr>
+				  </thead>
+
+				  <tbody class="text-center">
+				    <tr class="Badges">
+				      <td>01</td>
+				      <td>   Nikhil Jawale</td>
+				      <td class="font-weight-bold">257</td>
+				      <td> Anand Ghosh</td>
+				      <td>MCO</td>
+				      <td>IDO-3</td>
+				    </tr>
+				   
+				    <tr class="Badges">
+				      <td>02</td>
+				      <td> Githesh Charaparambil</td>
+				      <td class="font-weight-bold">256</td>
+				      <td>Pritesh Menon</td>
+				      <td>MCO</td>
+				      <td>IDO-1</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>03</td>
+				      <td> Durva Chougule</td>
+				      <td class="font-weight-bold">255</td>
+				      <td>Rahul Hirani</td>
+				      <td>MCO</td>
+				      <td>IDO-1</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>04</td>
+				      <td> Amodh Rane </td>
+				      <td class="font-weight-bold">243</td>
+				      <td>Dishank Jain</td>
+				      <td>MCO</td>
+				      <td>IDO-5</td>
+				    </tr>
+				     <tr class="Badges">
+				      <td>05</td>
+				      <td>Aniket Utekar</td>
+				      <td class="font-weight-bold">233</td>
+				      <td>Amit Mhatre</td>
+				      <td>MCO</td>
+				      <td>IDO-5</td>
+				    </tr>
+					<tr class="Badges">
+				      <td>05</td>
+				      <td>Namrata Shettigar</td>
+				      <td class="font-weight-bold">233</td>
+				      <td> Pritesh Menon</td>
+				      <td>MCO</td>
+				      <td>IDO-1</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>06</td>
+				      <td> Heet Joshi</td>
+				      <td class="font-weight-bold">231</td>
+				      <td>  Nishith Shetty</td>
+				      <td>MCO</td>
+				      <td>IDO-1</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>07</td>
+				      <td> Ronak Jain</td>
+				      <td class="font-weight-bold">229</td>
+				      <td> Suraj Kuwar</td>
+				      <td>MCO</td>
+				      <td>IDO-1</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>07</td>
+				      <td> Saurabh Kalamkar</td>
+				      <td class="font-weight-bold">229</td>
+				      <td> Amit Mhatre</td>
+				      <td>MCO</td>
+				      <td>IDO-4</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>07</td>
+				      <td>  Surinder Pathania</td>
+				      <td class="font-weight-bold">229</td>
+				      <td>Suraj Kuwar</td>
+				      <td>MCO</td>
+				      <td>IDO-1</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>08</td>
+				      <td> Roshani Shetty</td>
+				      <td class="font-weight-bold">225</td>
+				      <td>Sandeep Gurav</td>
+				      <td>MCO</td>
+				      <td>IDO-2</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>09</td>
+				      <td> Pavitra Shetty</td>
+				      <td class="font-weight-bold">224</td>
+				      <td>Shubhada Dolas-Waghmare</td>
+				      <td>MCO</td>
+				      <td>IDO-1</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>10</td>
+				      <td> Aniket Dhanawade</td>
+				      <td class="font-weight-bold">223</td>
+				      <td>  Suraj Kuwar</td>
+				      <td>MCO</td>
+				      <td>IDO-5</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>10</td>
+				      <td> Sagar Cheulkara</td>
+				      <td class="font-weight-bold">223</td>
+				      <td>  Deepak Joshi</td>
+				      <td>MCO</td>
+				      <td>IDO-3</td>
+				    </tr>
+
+				  </tbody>
+
+			</table>
+
+		</div>
+
+		<div>
+			&nbsp;<br>
+			&nbsp;<br>
+			&nbsp;<br>			
+		</div>
+
+		<div>
+		<p style="margin-left: 5%;" class="text-danger">Note :-  Above Ranking are based on data extracted form EMPOWER tool till 31 August 2020.</p>
+		</div>
+
+		<!-- Webpage Footer  -->
+<footer class="page-footer" style="background-color: #383C45; width: 100%;">
+
+ 
+<a href="https://www.here.com/" target="_blank" id="logo"><img src="hm.png" style="width: 35px; height: 35px; margin-left: 10px; margin: 10px;"></a>
+<div class="text-center center-block" id="flinks">
+<!-- <a href="https://www.here.com/" target="_blank" id="logo"><img src="hm.png"></a>&nbsp;&nbsp;&nbsp; -->
+
+<a  id="anchor-footer1" href="https://legal.here.com/en-gb/privacy/cookie-policy" target="_blank" style="color: white; text-decoration: none;" ><i class="fa fa-lock" aria-hidden="true"></i> Privacy & Policy</a>&nbsp;&nbsp;&nbsp;
+<a  id="anchor-footer2" href="https://legal.here.com/en-gb/terms" target="_blank" style="color: white; text-decoration: none;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Terms & Conditions</a>&nbsp;&nbsp;&nbsp;
+<a  id="anchor-footer3" href="mailto:empowersupport@here.com" target="_blank" style="color: white; text-decoration: none;"><i class="fa fa-envelope" aria-hidden="true"></i> Contact Us</a>
+
+</div>
+
+<div class="text-center center-block" id="sm">
+<a href="https://www.facebook.com/here/" target="_blank" style="color: white; "><i id="social-fb" class="fa fa-facebook-square social fa-2x"></i></a>
+<a href="https://twitter.com/HERE" target="_blank" style="color: white;"><i id="social-tw" class="fa fa-twitter-square social fa-2x" ></i></a>
+<a href="https://www.youtube.com/user/heremaps" target="_blank" style="color: white;"><i id="social-yt" class="fa fa-youtube-play social fa-2x" ></i></a>
+<a href="https://www.linkedin.com/company/here/" target="_blank" style="color: white;"><i id="social-li" class="fa fa-linkedin-square social fa-2x"></i></a>
+</div>
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3" style="color: white; margin-left: 70%; text-decoration: none;">© 2020 Copyright:
+<a href="https://empower.in.here.com/" style="color: white; text-decoration: none;"><b> EMPOWER </b></a>
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+		<script type="text/javascript">
+			$("select").click(function() {
+			  var open = $(this).data("isopen");
+			  if(open) {
+			    window.location.href = $(this).val()
+			  }
+			  //set isopen to opposite so next time when use clicked select box
+			  //it wont trigger this event
+			  $(this).data("isopen", !open);
+			});
+		</script>
+
+	</body>
+
+</html>

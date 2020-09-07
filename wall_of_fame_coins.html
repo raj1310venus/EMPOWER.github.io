@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wall of fame</title>
+
+	<!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  	<!-- font awesome CDN -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- font awesome CDN -->
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- google font cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+    <!--Countdown timer CSS code -->
+    <link rel="stylesheet" type="text/css" href="countdown.css">
+
+    <!-- Full page CSS code -->
+    <link rel="stylesheet" type="text/css" href="FAQ.css">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+    <!-- countdown js code -->
+    <script type="text/javascript" src="countdown.js"></script>
+
+    <!-- spinwheel cdn's -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <link rel="stylesheet" href="main.css"> 
+    <link rel="stylesheet" href="quiz.css">
+ 
+	<!-- CSS only -->
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+
+	<!-- JS, Popper.js, and jQuery -->
+	<!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" type="text/css" href="extensions/filter-control/bootstrap-table-filter-control.css"> -->
+
+	<script src="extensions/filter-control/bootstrap-table-filter-control.js"></script>
+
+
+
+	<style type="text/css">
+
+		body {
+			overflow-x: hidden;
+		}
+
+		#navwalloffame {
+			height: 80px;
+			overflow: visible;
+		}
+		
+		#walloffame1{
+
+			margin-right: 5%;
+			margin-left: 5%;
+			margin-top: 5%;
+			
+		}
+		/* class applies to select element itself, not a wrapper element */
+			.select-table-filter {
+				display: block;
+				font-size: 16px;
+				font-family: sans-serif;
+				font-weight: 700;
+				color: #444;
+				line-height: 1.3;
+				padding: .6em 1.4em .5em .8em;
+				width: 100%;
+				max-width: 100%; /* useful when width is set to anything other than 100% */
+				box-sizing: border-box;
+				margin: 0;
+				border: 1px solid #aaa;
+				box-shadow: 0 1px 0 1px rgba(0,0,0,.04);
+				border-radius: .5em;
+				-moz-appearance: none;
+				-webkit-appearance: none;
+				appearance: none;
+				background-color: #fff;
+
+				background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+				  linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+				background-repeat: no-repeat, repeat;
+				/* arrow icon position (1em from the right, 50% vertical) , then gradient position*/
+				background-position: right .7em top 50%, 0 0;
+				/* icon size, then gradient */
+				background-size: .65em auto, 100%;
+			}
+			/* Hide arrow icon in IE browsers */
+			.select-table-filter::-ms-expand {
+				display: none;
+			}
+			/* Hover style */
+			.select-table-filter:hover {
+				border-color: #888;
+			}
+			/* Focus style */
+			.select-table-filter:focus {
+				border-color: #aaa;
+				/* It'd be nice to use -webkit-focus-ring-color here but it doesn't work on box-shadow */
+				box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
+				box-shadow: 0 0 0 3px -moz-mac-focusring;
+				color: #222; 
+				outline: none;
+			}
+
+			/* Set options to normal weight */
+			.select-table-filter option {
+				font-weight:normal;
+			}
+
+			/* Disabled styles */
+			.select-table-filter:disabled, .select-table-filter[aria-disabled=true] {
+				color: graytext;
+				background-image: url(''),
+				  linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%);
+			}
+
+			.select-table-filter:disabled:hover, .select-table-filter[aria-disabled=true] {
+				border-color: #aaa;
+			}
+
+			.multi-column{
+				width: 500px;
+			}
+			.dropdown-menu.multi-column [class^="col-"] {
+			  padding: 10;
+			}
+
+			.inline li {
+			    display: inline;
+			    padding-left: 20px;
+			}
+
+
+
+	</style>
+</head>
+
+	<body style=" background-color: #F2F9FC;">
+
+		  <header style="background-color: #383C45;">
+      <nav class="navbar fixed-top navbar-expand-lg navbar-light" >
+          <a class="" href="Landing-Page.html"><img src="EmPower.png" width="150" height="40" class="d-inline-block align-top " alt="" loading="lazy"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0 nav justify-content-end" >
+              &nbsp;            
+              <li class="nav-item">
+                <a class="nav-link scroll" style="font-family: “Arial Rounded MT Bold”, “Helvetica Rounded”, Arial, sans-serif;" href="Landing-Page.html" data-toggle="tooltip" title="Home" data-placement="bottom"><img id="homeli" src="9.png" onmouseover="hover(this);" onmouseout="unhover(this); "> <!-- Home --> <span class="sr-only">(current)</span></a>
+              </li>&nbsp;
+
+              <li class="nav-item">
+                <a class="nav-link scroll" style="font-family: “Arial Rounded MT Bold”, “Helvetica Rounded”, Arial, sans-serif;" href="#spinwheel" data-toggle="tooltip" title="Agya Chakra" data-placement="bottom"><img id="homeli" src="1.png" onmouseover="hover1(this);" onmouseout="unhover1(this);"> <!-- Agya Chakra --></a>
+              </li>&nbsp;
+
+              
+              <li class="nav-item">
+                <a class="nav-link scroll" style="font-family: “Arial Rounded MT Bold”, “Helvetica Rounded”, Arial, sans-serif;" href="#introductionvideo" data-toggle="tooltip" title="OnBoarding Video" data-placement="bottom"><img id="homeli" src="4.png" onmouseover="hover2(this);" onmouseout="unhover2(this);"> <!-- Onboarding Video --></a>
+              </li>&nbsp;
+
+              <li class="nav-item">
+                <a class="nav-link scroll" style="font-family: “Arial Rounded MT Bold”, “Helvetica Rounded”, Arial, sans-serif;" href="#testimonial1" data-toggle="tooltip" title="Testimonial" data-placement="bottom"><img id="homeli" src="11.png" onmouseover="hover6(this);" onmouseout="unhover6(this);"> <!-- Testimonial Section --></a>
+              </li>&nbsp;
+
+               <li class="nav-item">
+                <a class="nav-link scroll" style="font-family: “Arial Rounded MT Bold”, “Helvetica Rounded”, Arial, sans-serif;" href="#headerimg" data-toggle="tooltip" title="FAQ" data-placement="bottom"><img id="homeli" src="8.png" onmouseover="hover3(this);" onmouseout="unhover3(this);"> <!-- FAQ Section --></a>
+              </li>&nbsp;
+
+              <li class="nav-item">
+                <a class="nav-link" style="font-family: “Arial Rounded MT Bold”, “Helvetica Rounded”, Arial, sans-serif;" href="wall_of_fame.html" data-toggle="tooltip" title="Wall of Fame" data-placement="bottom"><img id="homeli" src="6.png" onmouseover="hover4(this);" onmouseout="unhover4(this);"> <!-- Wall of fame --></a>
+              </li>&nbsp;         
+          </ul> 
+      </div>
+    </nav>
+  </header>
+		<div>
+			
+			<img src="Header_walloffame.png" style="margin-top: 5%;">
+
+		</div>
+
+		<div class="row">
+			<div class="col">
+				<nav class="navbar navbar-expand-lg navbar-light bg-light" id="walloffame1" style="width: 100%; margin-left: 10%;">
+					  <a class="navbar-brand" href="wall_of_fame.html">All</a>
+					  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					  </button>
+					  <div class="collapse navbar-collapse" id="navbarText">
+					   
+					    <ul class="navbar-nav mr-auto">
+					      <li class="nav-item active">
+					        <div class="dropdown">
+							    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Department <span class="caret"></span></button>
+							    <ul class="dropdown-menu multi-column inline" aria-labelledby="dropdownMenu1">
+							        <li><a href="MCO.html" class="action">MCO</a></li>
+							        <li ><a href="#" class="action">ALC</a></li>
+							        <li ><a href="#" class="action">PGP</a></li>
+							    </ul>
+							</div>
+					      </li>
+
+					      <li class="nav-item active">
+					        <li class="nav-item active">
+					        <div class="dropdown">
+							    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">Location <span class="caret"></span></button>
+							    <ul id="Department"class="dropdown-menu multi-column inline" aria-labelledby="dropdownMenu1">
+							        <li><a href="#" class="action">IDO1</a></li>
+							        <li><a href="#" class="action">IDO2</a></li>
+							        <li><a href="#" class="action">IDO3</a></li>
+							        <li><a href="#" class="action">IDO4</a></li>
+							        <li><a href="#" class="action">IDO5</a></li>
+							        <li><a href="#" class="action">IDO6</a></li>
+							    </ul>
+							</div>
+					      </li>
+					      </li>
+				     
+				  		</ul>
+
+					  </div>
+
+				</nav>
+			</div>
+
+			<div class="col">
+
+				<nav class="navbar navbar-expand-lg navbar-light bg-light" id="walloffame1" style="width: 25%; margin-left: 50%;">
+
+					        <!-- <select type="search" class="select-table-filter" data-table="order-table">
+							    <option value="">Badges</option>  
+							    <option value="Doe">Score</option>  
+							    <option value="Vanda">etc...</option>  
+							</select> -->
+
+							<div id="toolbar">
+									<select type="search" class="select-table-filter" data-table="order-table" class="form-control">
+											<option value="wall_of_fame_coins.html">Score</option>
+											<option value="all">Badges</option>
+											<option value="selected">Quiz</option>
+									</select>
+							</div>
+										      
+					</nav>
+				</div>
+
+			</div>	  
+
+		
+
+		<div id="walloffame1">
+
+			<table class="table table-striped order-table" data-toggle="table"
+			 data-search="true" data-filter-control="true" data-click-to-select="true" data-toolbar="#toolbar" id="table">
+			
+			<thead>
+
+				<tr>
+				      <th scope="col">Rank</th>
+				      <th scope="col">Employee</th>
+				      <th scope="col">Coins</th>
+				      <th scope="col"><center>Team</center></th>
+				      <th scope="col">Department</th>
+				      <th scope="col">Location</th>
+				    </tr>
+				  </thead>
+
+				  <tbodys>
+				    <tr class="Badges">
+				      <td>01</td>
+				      <td>Pristin Mathew</td>
+				      <td><img style=" height: 35px; width: 26px; padding-bottom: 9px;" src="c1.png"><a style="position:relative; margin-left: 8px; "><b>78</b></a></td>
+				      <td><center>Ashish Bhatt</center></td>
+				      <td>PGP</td>
+				      <td>IDO-2</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>02</td>
+				      <td> Vivek Nair</td>
+				      <td><img style=" height: 35px; width: 26px; padding-bottom: 9px;" src="c1.png"><a style="position:relative; margin-left: 8px; "><b>70</b></a></td>
+				      <td><center>Vela Desai</center></td>
+				      <td>ALC</td>
+				      <td>IDO-5</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>03</td>
+				      <td> Sunakhi Mandal</td>
+				      <td><img style=" height: 35px; width: 26px; padding-bottom: 9px;" src="c1.png"><a style="position:relative; margin-left: 8px; "><b>68</b></a></td>
+				      <td><center>Vela Desai</center></td>
+				      <td>ALC</td>
+				      <td>IDO-4</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>04</td>
+				      <td> Amol Bhosle</td>
+				      <td><img style=" height: 35px; width: 26px; padding-bottom: 9px;" src="c1.png"><a style="position:relative; margin-left: 8px; "><b>62</b></a></td>
+				      <td><center>Vela Desai</center></td>
+				      <td>ALC</td>
+				      <td>IDO-5</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>05</td>
+				      <td>Irfan Shaikh</td>
+				      <td><img style=" height: 35px; width: 26px; padding-bottom: 9px;" src="c1.png"><a style="position:relative; margin-left: 8px; "><b>57</b></a></td>
+				      <td><center> Abhijit Gawde</center></td>
+				      <td>MCO</td>
+				      <td>IDO-1</td>
+				    </tr>
+
+				    <tr class="Badges">
+				      <td>06</td>
+				      <td> Ekta Sinha</td>
+				      <td><img style=" height: 35px; width: 26px; padding-bottom: 9px;" src="c1.png"><a style="position:relative; margin-left: 8px; "><b>53</b></a></td>
+				      <td><center>Vela Desai</center></td>
+				      <td>ALC</td>
+				      <td>IDO-5</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>07</td>
+				      <td>Pournima Kadam</td>
+				      <td><img style=" height: 35px; width: 26px; padding-bottom: 9px;" src="c1.png"><a style="position:relative; margin-left: 8px; "><b>48</b></a></td>
+				      <td><center>Chetan Vyavahare</center></td>
+				      <td>MCO</td>
+				      <td>IDO-1</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>08</td>
+				      <td> Aditya Nair</td>
+				      <td><img style=" height: 35px; width: 26px; padding-bottom: 9px;" src="c1.png"><a style="position:relative; margin-left: 8px; "><b>45</b></a></td>
+				      <td><center>Vela Desai</center></td>
+				      <td>ALC</td>
+				      <td>IDO-5</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>09</td>
+				      <td> Pooja.V Shinde</td>
+				      <td><img style=" height: 35px; width: 26px; padding-bottom: 9px;" src="c1.png"><a style="position:relative; margin-left: 8px; "><b>42</b></a></td>
+				      <td><center>Ravikumar Gude</center></td>
+				      <td>MCO</td>
+				      <td>IDO-6</td>
+				    </tr>
+					<tr class="Badges">
+				      <td>10</td>
+				      <td> Ronnie Shinde</td>
+				      <td><img style=" height: 35px; width: 26px; padding-bottom: 9px;" src="c1.png"><a style="position:relative; margin-left: 8px; "><b>42</b></a></td>
+				      <td><center>Ravikumar Gude</center></td>
+				      <td>MCO</td>
+				      <td>IDO-6</td>
+				    </tr>
+				    <tr class="Badges">
+				      <td>11</td>
+				      <td> Rakshita Salian</td>
+				      <td><img style=" height: 35px; width: 26px; padding-bottom: 9px;" src="c1.png"><a style="position:relative; margin-left: 8px; "><b>42</b></a></td>
+				      <td><center>Ravikumar Gude</center></td>
+				      <td>MCO</td>
+				      <td>IDO-6</td>
+				    </tr>
+
+				    <tr class="Badges">
+				      <td>12</td>
+				      <td> Svetlana Singh</td>
+				      <td><img style=" height: 35px; width: 26px; padding-bottom: 9px;" src="c1.png"><a style="position:relative; margin-left: 8px; "><b>42</b></a></td>
+				      <td><center>Sumit Mishra</center></td>
+				      <td>PGP</td>
+				      <td>IDO-6</td>
+				    </tr>
+
+				    
+
+				  </tbody>
+
+			</table>
+
+		</div>
+
+		<div>
+			&nbsp;<br>
+			&nbsp;<br>
+			&nbsp;<br>			
+		</div>
+
+		<!-- Webpage Footer  -->
+<footer class="page-footer" style="background-color: #383C45; width: 100%;">
+
+ 
+<a href="https://www.here.com/" target="_blank" id="logo"><img src="hm.png" style="width: 35px; height: 35px; margin-left: 10px; margin: 10px;"></a>
+<div class="text-center center-block" id="flinks">
+<!-- <a href="https://www.here.com/" target="_blank" id="logo"><img src="hm.png"></a>&nbsp;&nbsp;&nbsp; -->
+
+<a  id="anchor-footer1" href="https://legal.here.com/en-gb/privacy/cookie-policy" target="_blank" style="color: white; text-decoration: none;" ><i class="fa fa-lock" aria-hidden="true"></i> Privacy & Policy</a>&nbsp;&nbsp;&nbsp;
+<a  id="anchor-footer2" href="https://legal.here.com/en-gb/terms" target="_blank" style="color: white; text-decoration: none;"><i class="fa fa-pencil-square-o" aria-hidden="true"></i> Terms & Conditions</a>&nbsp;&nbsp;&nbsp;
+<a  id="anchor-footer3" href="mailto:empowersupport@here.com" target="_blank" style="color: white; text-decoration: none;"><i class="fa fa-envelope" aria-hidden="true"></i> Contact Us</a>
+
+</div>
+
+<div class="text-center center-block" id="sm">
+<a href="https://www.facebook.com/here/" target="_blank" style="color: white; "><i id="social-fb" class="fa fa-facebook-square social fa-2x"></i></a>
+<a href="https://twitter.com/HERE" target="_blank" style="color: white;"><i id="social-tw" class="fa fa-twitter-square social fa-2x" ></i></a>
+<a href="https://www.youtube.com/user/heremaps" target="_blank" style="color: white;"><i id="social-yt" class="fa fa-youtube-play social fa-2x" ></i></a>
+<a href="https://www.linkedin.com/company/here/" target="_blank" style="color: white;"><i id="social-li" class="fa fa-linkedin-square social fa-2x"></i></a>
+</div>
+
+<!-- Copyright -->
+<div class="footer-copyright text-center py-3" style="color: white; margin-left: 70%; text-decoration: none;">© 2020 Copyright:
+<a href="https://empower.in.here.com/" style="color: white; text-decoration: none;"><b> EMPOWER </b></a>
+</div>
+<!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+
+		<script type="text/javascript">
+			$("select").click(function() {
+			  var open = $(this).data("isopen");
+			  if(open) {
+			    window.location.href = $(this).val()
+			  }
+			  //set isopen to opposite so next time when use clicked select box
+			  //it wont trigger this event
+			  $(this).data("isopen", !open);
+			});
+		</script>
+
+	</body>
+
+</html>
